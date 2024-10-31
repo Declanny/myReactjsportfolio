@@ -1,0 +1,40 @@
+.about {
+  padding: 20px;
+  background-color: #f9f9f9;
+  margin-top: -30px;
+  
+  
+  /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
+}
+
+.about h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.about p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555;
+}
+
+.about p span {
+  font-weight: bold;
+  color: #77aaed; /* Highlight key phrases */
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 20px;
+  }
+
+  .about h2 {
+    font-size: 1.8em;
+  }
+
+  .about p {
+    font-size: 1em;
+  }
+}

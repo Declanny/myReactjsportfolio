@@ -1,0 +1,11 @@
+/* src/components/Footer/Footer.css */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    
+    
+    bottom: 0;
+  }
+  

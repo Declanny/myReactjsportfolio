@@ -1,0 +1,87 @@
+/* General header styles */
+header {
+    background-color: #f8f9fa;
+    padding: 20px;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .header-text {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .header-text h1 {
+    margin: 10px 0;
+    font-size: 2em;
+  }
+  
+  .header-text p {
+    margin: 5px 0;
+    font-size: 1.2em;
+    color: #555;
+  }
+  
+  .header-image img {
+   
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: -39px;
+  }
+  
+
+  
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+   
+    .header-text h1 {
+      font-size: 1.5em;
+    }
+  
+    .header-text p {
+      font-size: 1em;
+    }
+
+    .header-image img {
+      width: 200px;
+      height: 200px;
+      margin-top: -39px;
+    }
+  }
+  
+ 
+
+  @media (max-width: 480px) {
+   
+    .header-text h1 {
+      font-size: 1.2em;
+    }
+  
+    .header-text p {
+      font-size: 0.9em;
+    }
+  
+    .header-image img {
+      width: 150px;
+      height: 150px;
+      margin-top: 20px;
+      margin-left: 20px;
+      
+    }
+  
+   
+  }
+  @media (max-width: 320px){
+    .header-image img {
+      width: 120px;
+      height: 120px;
+     
+      
+    }
+  }

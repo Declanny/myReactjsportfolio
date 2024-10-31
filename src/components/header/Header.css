@@ -1,0 +1,47 @@
+.nav-group {
+  display: flex;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #f2e6e6;
+  max-width: fit-content; /* Ensures width wraps around nav links */
+  padding: 0; /* Removes extra padding */
+ 
+}
+
+.nav-link {
+  padding: 10px 15px;
+  color: #333;
+  text-decoration: none;
+  background-color: transparent;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Active link styling */
+.nav-link.active {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Hover effect */
+.nav-link:hover {
+  background-color: #333;
+  color: #fff;
+  border-radius: 15px;
+}
+ /* Responsive adjustments */
+ @media (max-width: 768px) {
+   
+  /* Reduce nav button size on smaller screens */
+  .nav-link {
+    font-size: 0.9em;
+    padding: 5px 5px;
+  }
+}
+
+
+
+@media (max-width: 480px) {
+ 
+
+
+}

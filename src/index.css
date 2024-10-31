@@ -1,0 +1,19 @@
+/* src/index.css */
+body {
+
+    margin-left: 150px; /* Add margin for larger screens */
+    margin-right: 150px; /* Add padding for larger screens */
+  }
+
+  
+  
+  
+  /* Responsive styles for mobile and tablets */
+  @media (max-width: 968px) {
+    body {
+      margin-left: 0; /* Remove left margin on small screens */
+      margin-right: 0; /* Remove right margin on small screens */
+      padding: 5px; /* Maintain padding */
+    }
+  }
+  
