@@ -1,6 +1,6 @@
 /* General header styles */
 header {
-    background-color: #f8f9fa;
+    /* background-color: #f8f9fa; */
     padding: 20px;
   }
   
@@ -12,6 +12,7 @@ header {
   .header-text {
     display: flex;
     flex-direction: column;
+    margin-top: 45px;
   }
   
   .header-text h1 {
@@ -27,11 +28,12 @@ header {
   
   .header-image img {
    
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     object-fit: cover;
-    margin-top: -39px;
+    margin-top: 30px;
+    border:  5px solid rgba(235, 194, 175, 0.467);
   }
   
 
@@ -51,7 +53,7 @@ header {
     .header-image img {
       width: 200px;
       height: 200px;
-      margin-top: -39px;
+      margin-top: 20px;
     }
   }
   
@@ -68,10 +70,10 @@ header {
     }
   
     .header-image img {
-      width: 150px;
-      height: 150px;
-      margin-top: 20px;
-      margin-left: 20px;
+      width: 120px;
+      height: 120px;
+      margin-top: 59px;
+      margin-left: 17px;
       
     }
   

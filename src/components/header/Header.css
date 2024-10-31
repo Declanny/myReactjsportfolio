@@ -1,3 +1,10 @@
+.header-container {
+  top: 0;
+  background-color: #fff;
+  position: fixed;
+  height: auto;
+  width: 100%;
+}
 .nav-group {
   display: flex;
   border-radius: 12px;
@@ -5,6 +12,8 @@
   background-color: #f2e6e6;
   max-width: fit-content; /* Ensures width wraps around nav links */
   padding: 0; /* Removes extra padding */
+  position: fixed;
+  top: 10px;
  
 }
 
@@ -20,6 +29,7 @@
 .nav-link.active {
   background-color: #333;
   color: #fff;
+  border-radius: 15px;
 }
 
 /* Hover effect */
@@ -34,7 +44,7 @@
   /* Reduce nav button size on smaller screens */
   .nav-link {
     font-size: 0.9em;
-    padding: 5px 5px;
+    padding: 5px 10px;
   }
 }
 
