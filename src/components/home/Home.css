@@ -36,7 +36,44 @@ header {
     border:  5px solid rgba(235, 194, 175, 0.467);
   }
   
-
+  .audio-indicator {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  .microphone-icon {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .wave-indicator {
+    display: flex;
+    gap: 3px;
+  }
+  
+  .wave-indicator span {
+    width: 4px;
+    height: 10px;
+    background-color: rgba(10, 3, 0, 0.961);
+    animation: waveAnimation 0.5s ease-in-out infinite;
+    border-radius: 2px;
+  }
+  
+  .wave-indicator.active span:nth-child(1) { animation-delay: 0.1s; }
+  .wave-indicator.active span:nth-child(2) { animation-delay: 0.2s; }
+  .wave-indicator.active span:nth-child(3) { animation-delay: 0.3s; }
+  .wave-indicator.active span:nth-child(4) { animation-delay: 0.4s; }
+  .wave-indicator.active span:nth-child(5) { animation-delay: 0.5s; }
+  
+  @keyframes waveAnimation {
+    0%, 100% { transform: scaleY(1); }
+    50% { transform: scaleY(1.5); }
+  }
+  
+  
   
   
   /* Responsive adjustments */
