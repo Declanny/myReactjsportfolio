@@ -9,6 +9,7 @@ import Projects from './components/projects/Projects';
 import Contact from './components/contact/Contact';
 import './index.css';
 import Work from './components/work/Work';
+import Skills from './components/skills/skills';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         </Routes>
         <About />
         <Work />
+        <Skills />
         <Projects />
         <Contact />
       </main>
