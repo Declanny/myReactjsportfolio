@@ -1,126 +1,139 @@
 /* General header styles */
 header {
-    /* background-color: #f8f9fa; */
-    padding: 20px;
-  }
-  
-  .header-content {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .header-text {
-    display: flex;
-    flex-direction: column;
-    margin-top: 45px;
-  }
-  
+  padding: 20px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 45px;
+}
+
+.header-text h1 {
+  margin: 10px 0;
+  font-size: 2em;
+}
+
+.header-text p {
+  margin: 5px 0;
+  font-size: 1.2em;
+  color: #555;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.header-image img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 30px;
+  border: 5px solid rgba(235, 194, 175, 0.467);
+}
+
+.verification-badge {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.audio-indicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.microphone-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.wave-indicator {
+  display: flex;
+  gap: 3px;
+}
+
+.wave-indicator span {
+  width: 4px;
+  height: 10px;
+  background-color: rgba(10, 3, 0, 0.961);
+  animation: waveAnimation 0.5s ease-in-out infinite;
+  border-radius: 2px;
+}
+
+.wave-indicator.active span:nth-child(1) { animation-delay: 0.1s; }
+.wave-indicator.active span:nth-child(2) { animation-delay: 0.2s; }
+.wave-indicator.active span:nth-child(3) { animation-delay: 0.3s; }
+.wave-indicator.active span:nth-child(4) { animation-delay: 0.4s; }
+.wave-indicator.active span:nth-child(5) { animation-delay: 0.5s; }
+
+@keyframes waveAnimation {
+  0%, 100% { transform: scaleY(1); }
+  50% { transform: scaleY(1.5); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
   .header-text h1 {
-    margin: 10px 0;
-    font-size: 2em;
+    font-size: 1.5em;
   }
-  
+
   .header-text p {
-    margin: 5px 0;
-    font-size: 1.2em;
-    color: #555;
+    font-size: 1em;
   }
-  
+
   .header-image img {
-   
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-top: 30px;
-    border:  5px solid rgba(235, 194, 175, 0.467);
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
   }
-  
-  .audio-indicator {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    cursor: pointer;
-    margin-top: 15px;
-  }
-  
-  .microphone-icon {
+
+  .verification-badge {
     width: 30px;
     height: 30px;
   }
-  
-  .wave-indicator {
-    display: flex;
-    gap: 3px;
-  }
-  
-  .wave-indicator span {
-    width: 4px;
-    height: 10px;
-    background-color: rgba(10, 3, 0, 0.961);
-    animation: waveAnimation 0.5s ease-in-out infinite;
-    border-radius: 2px;
-  }
-  
-  .wave-indicator.active span:nth-child(1) { animation-delay: 0.1s; }
-  .wave-indicator.active span:nth-child(2) { animation-delay: 0.2s; }
-  .wave-indicator.active span:nth-child(3) { animation-delay: 0.3s; }
-  .wave-indicator.active span:nth-child(4) { animation-delay: 0.4s; }
-  .wave-indicator.active span:nth-child(5) { animation-delay: 0.5s; }
-  
-  @keyframes waveAnimation {
-    0%, 100% { transform: scaleY(1); }
-    50% { transform: scaleY(1.5); }
-  }
-  
-  
-  
-  
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-   
-    .header-text h1 {
-      font-size: 1.5em;
-    }
-  
-    .header-text p {
-      font-size: 1em;
-    }
+}
 
-    .header-image img {
-      width: 200px;
-      height: 200px;
-      margin-top: 20px;
-    }
+@media (max-width: 480px) {
+  .header-text h1 {
+    font-size: 1.2em;
   }
-  
- 
 
-  @media (max-width: 480px) {
-   
-    .header-text h1 {
-      font-size: 1.2em;
-    }
-  
-    .header-text p {
-      font-size: 0.9em;
-    }
-  
-    .header-image img {
-      width: 120px;
-      height: 120px;
-      margin-top: 59px;
-      margin-left: 17px;
-      
-    }
-  
-   
+  .header-text p {
+    font-size: 0.9em;
   }
-  @media (max-width: 320px){
-    .header-image img {
-      width: 120px;
-      height: 120px;
-     
-      
-    }
+
+  .header-image img {
+    width: 120px;
+    height: 120px;
+    margin-top: 20px;
   }
+
+  .verification-badge {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .header-image img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .verification-badge {
+    width: 15px;
+    height: 15px;
+  }
+}

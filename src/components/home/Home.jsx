@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Home.css';
 
 const Home = () => {
   const [isSpeaking, setIsSpeaking] = useState(false);
+  const [badgePosition, setBadgePosition] = useState({ top: 0, right: 0 });
 
   const readText = () => {
     const text = "Hello, I'm Chisom, a Software Engineer with a passion for business. I enjoy creating innovative solutions and supporting others.";
@@ -15,6 +16,22 @@ const Home = () => {
     window.speechSynthesis.speak(speech);
   };
 
+  useEffect(() => {
+    const adjustBadgePosition = () => {
+      const image = document.querySelector('.header-image img');
+      if (image) {
+        setBadgePosition({
+          top: -0.1 * image.offsetHeight,
+          right: -0.1 * image.offsetWidth,
+        });
+      }
+    };
+    
+    adjustBadgePosition();
+    window.addEventListener('resize', adjustBadgePosition);
+    return () => window.removeEventListener('resize', adjustBadgePosition);
+  }, []);
+
   return (
     <header>
       <div className="header-content">
@@ -22,7 +39,7 @@ const Home = () => {
           <h1>Hello, I'm Chisom</h1>
           <p>
             Software Engineer with a passion for business.
-            <br /> I enjoy creating innovative solutions and supporting others. <br /> I'm very active on LikedIn
+            <br /> I enjoy creating innovative solutions and supporting others. <br /> I'm very active on LinkedIn
           </p>
           <div className="audio-indicator" onClick={readText}>
             <img
@@ -35,8 +52,21 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="header-image">
-          <img src="https://res.cloudinary.com/dqbbm0guw/image/upload/v1730032518/chef6_yeyo3z.jpg" alt="Logo" />
+        <div className="image-container">
+          <div className="header-image">
+            <img src="https://res.cloudinary.com/dqbbm0guw/image/upload/v1730032518/chef6_yeyo3z.jpg" alt="Profile" />
+          </div>
+          <img
+            src="https://res.cloudinary.com/dqbbm0guw/image/upload/v1730574869/icons8-verified-50_t63xgm.png"
+            alt="Verification Badge"
+            className="verification-badge"
+            style={{
+              top: badgePosition.top,
+              right: badgePosition.right,
+              width: '40px',
+              height: '40px',
+            }}
+          />
         </div>
       </div>
     </header>
