@@ -54,7 +54,7 @@ const Home = () => {
         </div>
         <div className="image-container">
           <div className="header-image">
-            <img src="https://res.cloudinary.com/dqbbm0guw/image/upload/v1730032518/chef6_yeyo3z.jpg" alt="Profile" />
+            <img src="https://res.cloudinary.com/dqbbm0guw/image/upload/ar_1:1,c_fill,g_auto,w_1000/v1727183081/portfolio_z2ldxh.jpg" alt="Profile" />
           </div>
           <img
             src="https://res.cloudinary.com/dqbbm0guw/image/upload/v1730574869/icons8-verified-50_t63xgm.png"
