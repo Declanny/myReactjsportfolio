@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import './Home.css';
 
 const Home = () => {
@@ -36,10 +36,10 @@ const Home = () => {
     <header>
       <div className="header-content">
         <div className="header-text">
-          <h1>Hello, I'm Chisom</h1>
+          <h1>Hello, I&apos;m Chisom</h1>
           <p>
             Software Engineer with a passion for business.
-            <br /> I enjoy creating innovative solutions and supporting others. <br /> I'm very active on LinkedIn
+            <br /> I enjoy creating innovative solutions and supporting others. <br /> I&apos;m very active on LinkedIn
           </p>
           <div className="audio-indicator" onClick={readText}>
             <img

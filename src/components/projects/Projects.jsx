@@ -58,7 +58,7 @@ const Projects = () => {
   return (
     <section id="projects" className="projects">
       <h2>My Projects</h2>
-      <h4>Here are some of the projects I've worked on.</h4>
+      <h4>Here are some of the projects I&apos;ve worked on.</h4>
       <div className="projects-container">
         {projectData.map((project, index) => (
           <ProjectCard key={index} {...project} />

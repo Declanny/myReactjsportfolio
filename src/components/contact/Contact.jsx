@@ -1,12 +1,12 @@
 // src/components/Contact/Contact.js
-import React from 'react';
+
 import './Contact.css';
 
 const Contact = () => {
   return (
     <section id="contact" className="contact">
       <h2>Contact Me</h2>
-      <p>If you'd like to get in touch, feel free to reach out!</p>
+      <p>If you&apos;d like to get in touch, feel free to reach out!</p>
       <div className="social-icons">
         <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="social-item">
           <img src="https://static.vecteezy.com/system/resources/previews/018/930/480/non_2x/linkedin-logo-linkedin-icon-transparent-free-png.png" alt="LinkedIn" />
