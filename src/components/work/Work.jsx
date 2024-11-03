@@ -4,36 +4,36 @@ import './Work.css';
 const workData = [
   {
     company: "Liben",
-    jobTitle: "Backend Developer",
+    jobTitle: "Lead Frontend Developer",
     logo: "https://res.cloudinary.com/dqbbm0guw/image/upload/v1730368832/Screenshot_2024-10-31_at_10.56.36_AM_fp9zt3.png",
     startDate: "Jan 2024",
     endDate: "Ongoing",
-    description: "Implemented a scalable backend solution, resulting in a 30% increase in system efficiency."
+    description: "Leading frontend development for a platform connecting local and high-skill workers with clients, similar to Upwork."
   },
   {
     company: "HomeAcq",
-    jobTitle: "UI/UX Designer",
+    jobTitle: "Frontend Developer",
     logo: "https://res.cloudinary.com/dqbbm0guw/image/upload/v1730368840/Screenshot_2024-10-31_at_9.16.43_AM_sapnct.png",
     startDate: "Feb 2019",
     endDate: "Dec 2019",
-    description: "Developed an interactive UI, enhancing user engagement by 40%."
+    description: "Built an interactive property listing interface using Google Maps API for property-specific locations and geolocation to calculate distances between users and agents."
   },
   {
     company: "Cheta's Foods",
-    jobTitle: "Data Analyst",
+    jobTitle: "Fullstack Developer",
     logo: "https://res.cloudinary.com/dqbbm0guw/image/upload/v1730377198/Screenshot_2024-10-31_at_1.19.44_PM_dyj5ly.png",
     startDate: "May 2024",
-    endDate: "Aug 2024",
-    description: "Led the integration of AI-driven analytics, boosting insights for client growth."
+    endDate: "Ongoing",
+    description: "Developing a food delivery website similar to Chowdeck, focusing on seamless user experience, responsive design, and optimized backend."
   },
   {
-    company: "Creative Labs",
-    jobTitle: "Project Manager",
+    company: "ObiNwanne Social Bar",
+    jobTitle: "Restaurant Manager",
     logo: "https://res.cloudinary.com/dqbbm0guw/image/upload/v1730377455/Screenshot_2024-10-31_at_1.23.53_PM_b9lxka.png",
     startDate: "Aug 2016",
     endDate: "Apr 2018",
-    description: "Streamlined workflow automation, reducing operational costs by 20%."
-  },
+    description: "Managed daily restaurant operations, overseeing staff, customer service, and inventory, while improving operational efficiency."
+  }
 ];
 
 const Work = () => {
