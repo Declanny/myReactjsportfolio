@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { AiOutlineDown, AiOutlineUp } from 'react-icons/ai';
 import './Work.css';
 
 const workData = [
@@ -8,14 +9,14 @@ const workData = [
     logo: "https://res.cloudinary.com/dqbbm0guw/image/upload/v1730368832/Screenshot_2024-10-31_at_10.56.36_AM_fp9zt3.png",
     startDate: "Jan 2024",
     endDate: "Ongoing",
-    description: "Leading frontend development for a platform connecting local and high-skill workers with clients, similar to Upwork."
+    description: "Leading frontend development for Liben, a startup platform connecting local and skilled service providers with clients. Integrated features include a real-time booking system, user authentication with JWT, responsive UI, payment gateway, and dynamic search filters. Leveraging the MERN stack for seamless user experience and scalable design."
   },
   {
     company: "HomeAcq",
     jobTitle: "Frontend Developer",
     logo: "https://res.cloudinary.com/dqbbm0guw/image/upload/v1730368840/Screenshot_2024-10-31_at_9.16.43_AM_sapnct.png",
-    startDate: "Feb 2019",
-    endDate: "Dec 2019",
+    startDate: "Feb 2024",
+    endDate: "Jul 2024",
     description: "Built an interactive property listing interface using Google Maps API for property-specific locations and geolocation to calculate distances between users and agents."
   },
   {
@@ -26,14 +27,6 @@ const workData = [
     endDate: "Ongoing",
     description: "Developing a food delivery website similar to Chowdeck, focusing on seamless user experience, responsive design, and optimized backend."
   },
-  {
-    company: "ObiNwanne Social Bar",
-    jobTitle: "Restaurant Manager",
-    logo: "https://res.cloudinary.com/dqbbm0guw/image/upload/v1730377455/Screenshot_2024-10-31_at_1.23.53_PM_b9lxka.png",
-    startDate: "Aug 2016",
-    endDate: "Apr 2018",
-    description: "Managed daily restaurant operations, overseeing staff, customer service, and inventory, while improving operational efficiency."
-  }
 ];
 
 const Work = () => {
@@ -54,9 +47,14 @@ const Work = () => {
                 <img src={item.logo} alt={`${item.company} logo`} className="company-logo" />
               </td>
               <td>
-                <p>{item.startDate} - {item.endDate}</p>
-                <h3>{item.company}</h3>
-                <p className="job-title">{item.jobTitle}</p>
+                <div className="job-header">
+                  <p>{item.startDate} - {item.endDate}</p>
+                  <h3>{item.company}</h3>
+                  <p className="job-title">{item.jobTitle}</p>
+                  <span className="collapse-icon">
+                    {activeIndex === index ? <AiOutlineUp /> : <AiOutlineDown />}
+                  </span>
+                </div>
                 {activeIndex === index && (
                   <p className="work-description">{item.description}</p>
                 )}

@@ -1,5 +1,5 @@
-import PropTypes from "prop-types"
-
+import { FaGlobe, FaGithub } from 'react-icons/fa';
+import PropTypes from 'prop-types';
 import './ProjectCard.css';
 
 const ProjectCard = ({ image, title, description, tools, website, github }) => {
@@ -15,10 +15,10 @@ const ProjectCard = ({ image, title, description, tools, website, github }) => {
       </div>
       <div className="buttons">
         <a href={website} className="button website" target="_blank" rel="noopener noreferrer">
-          <i className="fas fa-globe"></i> Website
+          <FaGlobe /> Website
         </a>
         <a href={github} className="button github" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-github"></i> Source
+          <FaGithub /> Source
         </a>
       </div>
     </div>

@@ -6,11 +6,12 @@ const projectData = [
   {
     image: "https://res.cloudinary.com/dqbbm0guw/image/upload/v1730661445/Screenshot_2024-11-03_at_8.17.11_PM_l31kz5.png",
     title: "Liben",
-    description: "Liben is ",
-    tools: ["React", "CSS", "JavaScript", "Node.js", "MongoDB"],
+    description: "Liben connects clients with local service providers.",
+    tools: ["React", "TypeScript", "Node.js", "Express", "MongoDB"],
     website: "https://project1.com",
     github: "https://github.com/username/project1"
-  },
+  },  
+  
   {
     image: "https://res.cloudinary.com/dqbbm0guw/image/upload/v1730661646/Screenshot_2024-11-03_at_8.20.26_PM_xnrqyd.png",
     title: "Project One",
