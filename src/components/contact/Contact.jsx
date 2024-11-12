@@ -24,11 +24,11 @@ const Contact = () => {
           <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" />
           <span>Instagram</span>
         </a>
-        <a href="https://slack.com" target="_blank" rel="noopener noreferrer" className="social-item">
+        <a href="https://techcampusafrica.slack.com/team/U07BS3H727J" target="_blank" rel="noopener noreferrer" className="social-item">
           <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/306_Slack_logo-512.png" alt="Slack" />
           <span>Slack</span>
         </a>
-        <a href="mailto:youremail@example.com" className="social-item">
+        <a href="mailto:chisomhenryg@gmail.com" className="social-item">
           <img src="https://cdn.icon-icons.com/icons2/2631/PNG/512/gmail_new_logo_icon_159149.png" alt="Gmail" />
           <span>Gmail</span>
         </a>

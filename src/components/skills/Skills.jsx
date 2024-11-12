@@ -4,15 +4,18 @@ import './Skills.css';
 const Skills = () => {
   const skillsList = [
     'JavaScript',
-    'React.tsx',
-    'React.js',
+    'Typescript',
+    'React',
     'Next.js',
-    'Vue.js',
     'Node.js',
     'CSS',
     'HTML',
     'Python',
     'Git',
+    'Redux',
+    'MongoDB',
+    'PostgreSQL',
+    'AWS',
     'Docker',
   ];
 
