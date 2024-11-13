@@ -51,13 +51,13 @@ const Work = () => {
                   <p>{item.startDate} - {item.endDate}</p>
                   <h3>{item.company}</h3>
                   <p className="job-title">{item.jobTitle}</p>
-                  <span className="collapse-icon">
+                  <span className={`collapse-icon ${activeIndex === index ? 'rotate' : ''}`}>
                     {activeIndex === index ? <AiOutlineUp /> : <AiOutlineDown />}
                   </span>
                 </div>
-                {activeIndex === index && (
-                  <p className="work-description">{item.description}</p>
-                )}
+                <div className={`work-description ${activeIndex === index ? 'expanded' : ''}`}>
+                  <p>{item.description}</p>
+                </div>
               </td>
             </tr>
           ))}

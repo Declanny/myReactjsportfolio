@@ -20,7 +20,7 @@ table {
 }
 
 .job-header {
-  position: relative; /* Make this the positioning context */
+  position: relative; /* Positioning context for .collapse-icon */
 }
 
 .collapse-icon {
@@ -30,6 +30,11 @@ table {
   cursor: pointer;
   font-size: 1.2rem;
   color: #555;
+  transition: transform 0.4s ease; /* Smooth icon rotation */
+}
+
+.collapse-icon.rotate {
+  transform: rotate(180deg); /* Rotate icon when active */
 }
 
 .company-logo {
@@ -49,8 +54,17 @@ table {
   margin: 5px 0;
 }
 
+/* Work Description Animation */
 .work-description {
-  margin-top: 10px;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.work-description.expanded {
+  max-height: 200px; /* Adjust based on expected max content height */
+  opacity: 1;
   padding: 5px 10px;
   font-size: 0.9em;
   color: #242323;

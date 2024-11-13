@@ -1,5 +1,4 @@
 // src/components/Contact/Contact.js
-
 import './Contact.css';
 
 const Contact = () => {
@@ -8,19 +7,19 @@ const Contact = () => {
       <h2>Contact Me</h2>
       <p>If you&apos;d like to get in touch, feel free to reach out!</p>
       <div className="social-icons">
-        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="social-item">
+        <a href="https://www.linkedin.com/in/chisomhenryg/" target="_blank" rel="noopener noreferrer" className="social-item">
           <img src="https://static.vecteezy.com/system/resources/previews/018/930/480/non_2x/linkedin-logo-linkedin-icon-transparent-free-png.png" alt="LinkedIn" />
           <span>LinkedIn</span>
         </a>
-        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="social-item">
+        <a href="https://www.facebook.com/Chisom.henryg?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer" className="social-item">
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Facebook_Logo_2023.png/768px-Facebook_Logo_2023.png" alt="Facebook" />
           <span>Facebook</span>
         </a>
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-item">
+        <a href="https://x.com/ChisomHenry91" target="_blank" rel="noopener noreferrer" className="social-item">
           <img src="https://static.vecteezy.com/system/resources/previews/031/737/227/non_2x/twitter-new-logo-twitter-icons-new-twitter-logo-x-2023-x-social-media-icon-free-png.png" alt="X" />
           <span>X</span>
         </a>
-        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="social-item">
+        <a href="https://www.instagram.com/11declan/profilecard/?igsh=bHN3dGxrMW5oYmE0" target="_blank" rel="noopener noreferrer" className="social-item">
           <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" />
           <span>Instagram</span>
         </a>
@@ -33,7 +32,9 @@ const Contact = () => {
           <span>Gmail</span>
         </a>
       </div>
-      <button className="contact-button">Contact Me</button>
+      <a href="mailto:chisomhenryg@gmail.com">
+        <button className="contact-button">Contact Me</button>
+      </a>
     </section>
   );
 };

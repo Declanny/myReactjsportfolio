@@ -7,22 +7,22 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-content">
         <div className="social-links">
-          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/chisomhenryg/" target="_blank" rel="noopener noreferrer">
             LinkedIn
           </a>
-          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.facebook.com/Chisom.henryg?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer">
             Facebook
           </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://x.com/ChisomHenry91" target="_blank" rel="noopener noreferrer">
             X
           </a>
-          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/11declan/profilecard/?igsh=bHN3dGxrMW5oYmE0" target="_blank" rel="noopener noreferrer">
             Instagram
           </a>
-          <a href="https://slack.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://techcampusafrica.slack.com/team/U07BS3H727J" target="_blank" rel="noopener noreferrer">
             Slack
           </a>
-          <a href="mailto:youremail@example.com">
+          <a href="mailto:chisomhenryg@gmail.com">
             Gmail
           </a>
         </div>
