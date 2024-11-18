@@ -8,15 +8,9 @@ const Skills = () => {
     'React',
     'Next.js',
     'Node.js',
-    'CSS',
-    'HTML',
-    'Python',
     'Git',
     'Redux',
     'MongoDB',
-    'PostgreSQL',
-    'AWS',
-    'Docker',
   ];
 
   return (
